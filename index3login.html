@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UNV Bank of India-Personal Banking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+
+<style>
+body{
+  width:95%;
+  margin:0 auto;
+
+}#figcap{
+  float:left;
+}
+figcaption{
+  color:#0099ff;
+  padding-left:20px;
+}.head{
+  float:right;
+  margin-top:30px;
+}#option1{
+  padding:6px 0px;
+  background-color:#0099ff;
+  color:white;
+}.clear{
+  clear:both;
+}ul{
+  margin-top:-30px;
+  background-color: #66a3ff;
+  height:35px;
+}ul li{
+  float:left;
+  list-style-type:none;
+  height:35px;
+  padding:0 15px;
+ line-height:30px;
+}li:hover{
+  background-color:#3333cc;
+}#first{
+  color:white;
+  text-decoration:none;
+}#scroll{
+  background-color: #e6ffff;
+  padding:1px;
+  margin-top:-15px;
+}#left{
+  float:left;
+  margin-top:-5px;
+  padding:4px;
+  color:#000099;
+}#right{
+  float:right;
+  margin-top:-5px;
+  padding:4px;
+color:#000099;
+}#center{
+  float:left;
+  margin-top:-5px;
+color:#ff3300;
+
+padding:2px 0px 1px 160px;
+}.clear{
+  clear:both;
+}#form1{
+   border:1px solid crimson;
+}#care{
+  color:#ff3300;
+  font-weight:bold;
+}#care1{
+  float:left;
+
+}#form3{
+
+
+  padding-top:29px;
+}#form2{
+
+  float:left;
+  width:55%;
+  margin:15px 0px 0px 10px;
+  padding:20px;
+}#name{
+  padding:6px;
+background-color: #f2f2f2 ;
+}#mobile{
+  padding:6px;
+
+  background-color:  #f2f2f2;
+}#password{
+  padding:6px;
+
+  background-color:  #f2f2f2;
+}#login{
+  background-color: #0000cc;
+  color:white;
+  padding:8px 13px 8px 13px;
+  margin-left:5px;
+  border:0;
+}#reset{
+  background-color: #0000cc;
+  color:white;
+  padding:8px 13px 8px 13px;
+  margin-left:5px;
+  border:0;
+}#login:hover{
+  background-color: #66a3ff;
+}#reset:hover{
+  background-color: #66a3ff;
+}#img1{
+  width:40%;
+
+  float:right;
+}#notice{
+  background-color: #e6ffff;
+}
+
+#footer{
+  padding-top:1px;
+  background-color:#000080;
+ color:white;
+}#footer #footer1{
+ line-height:5px;
+ float:left;
+}
+
+#footer2{
+ line-height:5px;
+ float:right;
+}.clear2{
+  clear:both;
+}
+</style>
+</head>
+<body>
+
+<div>
+   <figure id="figcap">
+     <img src="unv.png" alt="unv" >
+     <figcaption><b>ONLINE</b></figcaption>
+   </figure>
+ <div class="head">
+  <p> <a href="#">UNV Home loan</a>|<a href="#">About OnlineUNV</a>|<a href="#">forms</a>|<a href="#">Net Banking Branches</a>|<select name="language" id="option1">
+    <option value="">Select language</option>
+    <option value="">ENGLISH</option>
+    <option value="">TAMIL</option>
+  </select>
+ </div>
+   <p><br class="clear"></p>
+</div>
+
+ <div>
+   <ul>
+     <li><a href="project1.html"id="first" >Home</a></li>
+     <li><a href="#"id="first">Products &amp Service</a></li>
+     <li><a href="#"id="first">How Do I</a></li>
+   </ul>
+<div id="scroll">
+  <p ><span id="left"><b>Login to OnlineUNV</b></span>  <span id="center"><marquee direction="up" scrollamount="1">Dear Customer, Mandatory login password change introduced for added security.</marquee></span>    <span id="right"><b>Welcome to Personal Internet Banking</b></span></p>
+  <p><br class="clear"></p>
+</div>
+<div id="form1">
+<div>
+  <div id="form2">
+  <div id="care1">(<span id="care">care:</span> Username and password are case sensitive.)</div>
+  <form name="RegForm" 	onsubmit="return Validate()" id="form3" method="post"  >
+       <label for="name">User Name*:</label><br>
+       <input type="text" name="UserName" id="name" size="25" placeholder="UserName" required><br><br>
+       <label for="mobile">Mobile no*:</label><br>
+       <input type="number" name="Mobile no" id="mobile"size="30" placeholder="Mobile no" required><br><br>
+       <label for="password">Password*:</label><br>
+       <input type="password" name="password" id="password"size="25" placeholder="Password"required><br><br>
+       <input type="submit" value="Login" id="login" onclick="sub();">
+       <input type="reset"  value="Reset" id="reset">
+  </form>
+</div>
+</div>
+  <img src="loginpage.png" id="img1" >
+  <P><br class="clear"></p>
+</div>
+  <div id="notice">
+    <p>1.Mandatory fields are marked with an asterisk (*)</p>
+    <p>2.Do not provide your username and password anywhere other than in this page</p>
+    <p>3.Your username and password are highly confidential.Never part with them.UNVwill never ask for this information.</P>
+  </div>
+
+  <div id="footer"><p><span id="footer1">© UNV Bank of India (APM Id:Serv_Tran_###)</span><span id="footer2">Site best viewed at 1024 x 768 resolution in I.E 10+, Mozilla 40+, Google Chrome 50+</span></p>
+    <br class="clear2">
+  </div>
+
+
+<script type="text/javascript">
+function Validate() {
+
+
+  var UserName =
+    document.forms["RegForm"]["UserName"];
+  var Mobile  =
+    document.forms["RegForm"]["Mobile no"];
+  var password =
+    document.forms["RegForm"]["password"];
+
+
+    if (UserName.value == "") {
+      window.alert("Please enter your name.");
+      name.focus();
+      return false;
+    }
+
+    if (Mobile.value == "") {
+      window.alert("Please enter your mobile no.");
+      address.focus();
+      return false;
+    }
+
+    if (password.value == "") {
+      window.alert(
+      "Please enter a valid password.");
+      email.focus();
+      return false;
+    }
+    else{
+      alert("login sucessfully")
+    }
+  }
+</script>
+</body>
+</html>
